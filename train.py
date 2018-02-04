@@ -51,7 +51,6 @@ def training():
                 line = preprocess(line)
                 iine = twitter.pos(line, norm=True, stem=True)
                 line = ' '.join(map(lambda x: x[0], line))
-                print(line)
                 temp2 = list(temp2)
                 temp2.append(line)
                 temp2.append('pos')
