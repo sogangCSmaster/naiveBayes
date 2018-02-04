@@ -3,10 +3,6 @@ import glob
 from konlpy.tag import Twitter
 import re
 import pickle
-#train = [('text', 'pos'), ('text2', 'neg')]
-#classifier = nltk.NaiveBayesClassifier.train(train)
-
-
 
 def preprocess(text):
     target_list = ["\t", "…", "·", "●", "○", "◎", "△", "▲", "◇", "■", "□", "☎", "☏", "※", "▶", "▷", "ℓ", "→", "↓", "↑", "┌", "┬", "┐", "├", "┤", "┼", "─", "│", "└", "┴", "┘"]
